@@ -206,6 +206,13 @@ section{position:relative;padding:96px 0}
 .also{margin-top:26px;color:var(--text)}
 .also::before{content:"";display:block;width:min(360px,60%);height:1px;margin:0 auto 22px;background:linear-gradient(90deg,transparent,var(--copper-soft),transparent)}
 .also b{color:var(--navy)}
+.rooftop{display:block;max-width:620px;margin:44px auto 0;padding:clamp(26px,4vw,38px) clamp(20px,4vw,40px);border-radius:28px;background:var(--navy);color:#fff;text-align:center;box-shadow:0 22px 44px -28px rgba(39,48,71,.6);transition:transform .4s var(--ease),background .4s}
+.rooftop:hover{transform:translateY(-4px);background:var(--navy-2)}
+.rooftop small{display:block;font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:var(--copper-soft);font-weight:600}
+.rooftop strong{display:block;font-family:var(--serif-black);font-weight:900;text-transform:uppercase;font-size:clamp(34px,6.4vw,58px);line-height:1.05;margin:8px 0 6px;color:#fff;letter-spacing:.01em}
+.rooftop .place{display:block;font-size:clamp(18px,2.8vw,24px);font-weight:600;color:#fff;opacity:.92}
+.rooftop .call{display:inline-flex;align-items:center;gap:10px;margin-top:20px;padding:14px clamp(16px,3vw,26px);border-radius:999px;background:var(--copper);color:#fff;font-weight:700;letter-spacing:.04em;font-size:clamp(15px,2.6vw,22px);white-space:nowrap;max-width:100%}
+.rooftop .call svg{width:24px;height:24px}
 
 footer{position:relative;color:#fff;padding:70px 0 calc(40px + env(safe-area-inset-bottom))}
 footer::before{content:"";position:absolute;inset:0;background:var(--navy);
@@ -417,9 +424,9 @@ footer .tag{width:100%;text-align:center;margin-top:18px;font-family:var(--scrip
 
     <div class="dishes">
       <article class="dish">
-        <div class="arch" data-anim="reveal"><div class="ph"><img src="assets/img/plato-chicharron.webp" alt="Entrada de chicharrón con canastitas de guacamole" loading="lazy"></div></div>
+        <div class="arch" data-anim="reveal"><div class="ph"><img src="assets/img/plato-chicharron.webp" alt="Entrada de chicharrón con canasticas de guacamole" loading="lazy"></div></div>
         <h4 data-anim="up">Entrada de chicharrón</h4>
-        <p data-anim="up" style="--d:80ms">Pork belly crocante con canastitas de guacamole, ideal para compartir.</p>
+        <p data-anim="up" style="--d:80ms">Pork belly crocante con canasticas de guacamole, ideal para compartir.</p>
       </article>
       <article class="dish">
         <div class="arch" data-anim="reveal" style="--d:150ms"><div class="ph"><img src="assets/img/plato-pasta.webp" alt="Pasta con pollo y champiñones y pan baguette" loading="lazy"></div></div>
@@ -427,8 +434,8 @@ footer .tag{width:100%;text-align:center;margin-top:18px;font-family:var(--scrip
         <p data-anim="up" style="--d:230ms">Pollo, champiñones, crema de leche y parmesano, con pan baguette.</p>
       </article>
       <article class="dish">
-        <div class="arch" data-anim="reveal"><div class="ph"><img src="assets/img/plato-sanduche.webp" alt="Sanduche de la casa con papas chips" loading="lazy"></div></div>
-        <h4 data-anim="up">Sanduches de la casa</h4>
+        <div class="arch" data-anim="reveal"><div class="ph"><img src="assets/img/plato-sanduche.webp" alt="Sánduche de la casa con papas chips" loading="lazy"></div></div>
+        <h4 data-anim="up">Sánduches de la casa</h4>
         <p data-anim="up" style="--d:80ms">Pollo, bondiola, jamón y queso o tomate y dos quesos, con papas chips.</p>
       </article>
       <article class="dish">
@@ -484,7 +491,7 @@ footer .tag{width:100%;text-align:center;margin-top:18px;font-family:var(--scrip
     </div>
 
     <div class="note" data-anim="up">
-      <p><b>Brunch:</b> lunes a viernes de 8:00 a 11:00 a. m.; sábados, domingos y festivos, hasta las 2:00 p. m.<br>Y en la carta: pizzas, pastas, entre panes, café de origen, cócteles y postres.</p>
+      <p><b>Brunch:</b> lunes a viernes de 8:00 a 11:00 a. m.; sábados, domingos y festivos, hasta las 2:00 p. m.<br>Y en la carta: pizzas, pastas, entre panes, café de origen, cocteles y postres.</p>
     </div>
   </div>
   <div class="blob" aria-hidden="true"><svg viewBox="0 0 100 60" preserveAspectRatio="none"><path fill="currentColor" d="M0 10C20 24 40 26 60 14S90 4 100 12V60H0Z"/></svg></div>
@@ -550,9 +557,9 @@ footer .tag{width:100%;text-align:center;margin-top:18px;font-family:var(--scrip
     </a>
 
     <div class="qr-box" data-anim="zoom">
-      <p class="script">Escanea para <em>ver la carta</em></p>
+      <p class="script">Escanea y <em>déjanos tu reseña</em></p>
       <span class="sep"></span>
-      <img class="qr" src="assets/img/qr-carta.svg" alt="Código QR para ver la carta de Alimor" loading="lazy">
+      <a href="https://search.google.com/local/writereview?placeid=ChIJ5594K2WBRo4RALgbYFsp8So" target="_blank" rel="noopener" aria-label="Déjanos tu reseña en Google"><img class="qr" src="assets/img/qr-resenas.svg" alt="Código QR para dejar una reseña de Alimor en Google" loading="lazy"></a>
     </div>
 
     <div class="contact">
@@ -568,7 +575,12 @@ footer .tag{width:100%;text-align:center;margin-top:18px;font-family:var(--scrip
           <div><small>Visítanos</small><span>Calle 78C Sur<br>#47G-10, Sabaneta</span></div>
         </a>
       </div>
-      <p class="also" data-anim="up">También en <b>Alimor Rooftop</b> · Mall La Doctora</p>
+      <a class="rooftop" data-anim="up" href="https://wa.me/573226973601?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20Alimor%20Rooftop" target="_blank" rel="noopener">
+        <small>También en</small>
+        <strong>Alimor Rooftop</strong>
+        <span class="place">Mall La Doctora · Sabaneta</span>
+        <span class="call"><svg><use href="#i-wa"/></svg> Contáctanos · 322 697 3601</span>
+      </a>
     </div>
   </div>
 </section>
